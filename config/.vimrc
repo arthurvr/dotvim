@@ -33,7 +33,7 @@ colorscheme Tomorrow-Night-Bright
 " Use the system clipboard
 set clipboard=unnamed
 if has('unnamedplus')
-    set clipboard+=unnamedplus
+	set clipboard+=unnamedplus
 endif
 
 if has('autocmd')
