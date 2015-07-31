@@ -14,6 +14,7 @@ set cindent
 set noswapfile
 set nobackup
 set nowb
+set history=3000
 nnoremap j gj
 nnoremap k gk
 let mapleader = ","
