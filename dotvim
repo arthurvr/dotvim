@@ -1,0 +1,19 @@
+#!/bin/bash
+DOTVIM=`pwd`
+
+mkdir -p "$HOME/.vim"
+ln -fs "$DOTVIM/config/.vimrc" "$HOME/.vimrc"
+
+mkdir -p "$HOME/.vim/UltiSnips"
+for file in $DOTVIM/snippets/*.snippets; do
+	ln -fs "$file" "$HOME/.vim/UltiSnips/$(basename $file)"
+done
+
+if [ ! -d "$HOME/.vim/autoload/pathogen.vim" ]; then
+	git clone https://github.com/tpope/vim-pathogen.git "$HOME/.vim/autoload/pathogen.vim"
+fi
+git --git-dir "$HOME/.vim/autoload/pathogen.vim/.git" pull
+
+if [ ! -d "$HOME/.vim/bundle" ]; then
+	ln -fs "$DOTVIM/plugins" "$HOME/.vim/bundle"
+fi

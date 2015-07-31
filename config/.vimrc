@@ -1,0 +1,50 @@
+set nocompatible
+set encoding=utf-8 nobomb
+set t_Co=256
+set number
+syntax on
+set showmode
+set showcmd
+set gcr=n:blinkon0
+set backspace=indent,eol,start
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set cindent
+set noswapfile
+set nobackup
+set nowb
+nnoremap j gj
+nnoremap k gk
+let mapleader = ","
+
+source ~/.vim/autoload/pathogen.vim/autoload/pathogen.vim
+execute pathogen#infect()
+
+colorscheme Tomorrow-Night-Bright
+
+" Use the system clipboard
+set clipboard=unnamed
+if has('unnamedplus')
+    set clipboard+=unnamedplus
+endif
+
+if has("autocmd")
+	" Enable JavaScript syntax on `.json` files
+	autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc set filetype=json
+
+	" Enable markdown files. Markdown has dozens of extensions but this one isn't recognized.
+	autocmd BufNewFile, BufRead *.md setlocal filetype=markdown
+endif
+
+nmap <leader>stt :SyntasticToggleMode<CR>
+let g:syntastic_mode_map={ 'mode': 'active',
+                     \ 'active_filetypes': [],
+                     \ 'passive_filetypes': ['html', 'json'] }
+
+set laststatus=2
+let g:Powerline_symbols = "fancy"
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"

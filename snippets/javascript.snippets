@@ -1,0 +1,84 @@
+snippet strict
+'use strict';
+$0
+endsnippet
+
+snippet fn
+function $1($2) {
+	$0
+}
+endsnippet
+
+snippet if
+if ($1) {
+	$0
+}
+endsnippet
+
+snippet while
+while ($1) {
+	$0
+}
+endsnippet
+
+snippet for
+for ($1) {
+	$0
+}
+endsnippet
+
+snippet req
+var $1 = require('$0');
+endsnippet
+
+snippet iife
+(function () {
+	$0
+})();
+endsnippet
+
+snippet class
+class $1 {
+	$0
+}
+endsnippet
+
+snippet re
+require('$0')
+endsnippet
+
+snippet it
+it('$1', function () {
+	$0
+});
+endsnippet
+
+snippet ita
+it('$1', function (done) {
+	$0
+});
+endsnippet
+
+snippet describe
+describe('$1', function () {
+	$0
+});
+endsnippet
+
+snippet as:eq
+assert.equal($0);
+endsnippet
+
+snippet as:deq
+assert.deepEqual($0);
+endsnippet
+
+snippet as:seq
+assert.strictEqual($0);
+endsnippet
+
+snippet as:th
+assert.throws(function () {
+	$0
+});
+endsnippet
