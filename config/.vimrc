@@ -14,6 +14,7 @@ set cindent
 set noswapfile
 set nobackup
 set nowb
+set ttyfast
 set history=3000
 set mouse=
 nnoremap j gj
