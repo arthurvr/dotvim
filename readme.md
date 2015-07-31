@@ -1,6 +1,10 @@
 # dotvim
 
+> My personal Vim configuration
+
 ## Setup
+
+Clone this repo (or your fork) and run the `dotvim` script.
 
 ```
 $ ./dotvim
