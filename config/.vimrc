@@ -19,6 +19,7 @@ set history=3000
 set mouse=
 nnoremap j gj
 nnoremap k gk
+nnoremap Y y$
 let mapleader = ','
 autocmd FileType gitcommit setlocal textwidth=72
 
