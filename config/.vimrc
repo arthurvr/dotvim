@@ -32,9 +32,6 @@ endif
 if has("autocmd")
 	" Enable JavaScript syntax on `.json` files
 	autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc set filetype=json
-
-	" Enable markdown files. Markdown has dozens of extensions but this one isn't recognized.
-	autocmd BufNewFile, BufRead *.md setlocal filetype=markdown
 endif
 
 nmap <leader>stt :SyntasticToggleMode<CR>
