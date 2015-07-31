@@ -48,3 +48,5 @@ let g:Powerline_symbols = "fancy"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+map <leader>cc :TComment<CR>
