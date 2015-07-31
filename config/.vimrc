@@ -45,6 +45,7 @@ nmap <leader>stt :SyntasticToggleMode<CR>
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html', 'json'] }
+let g:syntastic_haskell_checkers = ['hlint', 'hdevtools']
 
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
