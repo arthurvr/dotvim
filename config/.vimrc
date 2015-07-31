@@ -18,7 +18,7 @@ set history=3000
 set mouse=
 nnoremap j gj
 nnoremap k gk
-let mapleader = ","
+let mapleader = ','
 autocmd FileType gitcommit setlocal textwidth=72
 
 source ~/.vim/autoload/pathogen.vim/autoload/pathogen.vim
@@ -32,7 +32,7 @@ if has('unnamedplus')
     set clipboard+=unnamedplus
 endif
 
-if has("autocmd")
+if has('autocmd')
 	" Enable JavaScript syntax on `.json` files
 	autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc set filetype=json
 endif
@@ -43,10 +43,10 @@ let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'passive_filetypes': ['html', 'json'] }
 
 set laststatus=2
-let g:Powerline_symbols = "fancy"
+let g:Powerline_symbols = 'fancy'
 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 map <leader>cc :TComment<CR>
