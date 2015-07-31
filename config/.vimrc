@@ -17,6 +17,7 @@ set nowb
 nnoremap j gj
 nnoremap k gk
 let mapleader = ","
+autocmd FileType gitcommit setlocal textwidth=72
 
 source ~/.vim/autoload/pathogen.vim/autoload/pathogen.vim
 execute pathogen#infect()
