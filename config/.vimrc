@@ -15,6 +15,7 @@ set noswapfile
 set nobackup
 set nowb
 set history=3000
+set mouse=
 nnoremap j gj
 nnoremap k gk
 let mapleader = ","
