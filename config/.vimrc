@@ -18,6 +18,7 @@ set scrolloff=2
 set ttyfast
 set history=3000
 set mouse=
+set ignorecase
 nnoremap j gj
 nnoremap k gk
 nnoremap Y y$
