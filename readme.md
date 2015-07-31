@@ -17,3 +17,13 @@ This script will link all configuration files and plugins. When running this, ma
 
 If the `~/.vimrc.local` file exists, it will be automatically sourced after `~/.vimrc`, thus, allowing its content to add or overwrite the settings from `~/.vimrc`. I use this for temporary changes or simply things I don't want in this repo.
 
+## Credits
+
+This repo is basically a collection of things I stole from other people. Namely:
+
+* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+* [Pascal Hartig](https://github.com/passy/dotvim)
+* [Cătălin Mariș](https://github.com/alrra/dotfiles)
+* [Nicolas Gallagher](https://github.com/necolas/dotfiles)
+* [Janus](https://github.com/carlhuda/janus)
+* ...
