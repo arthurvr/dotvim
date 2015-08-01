@@ -4,11 +4,5 @@ DOTVIM=`pwd`
 mkdir -p "$HOME/.vim"
 mkdir -p "$HOME/.vim/undo"
 ln -fs "$DOTVIM/config/.vimrc" "$HOME/.vimrc"
-
-if [ ! -d "$HOME/.vim/UltiSnips" ]; then
-	ln -fs "$DOTVIM/snippets" "$HOME/.vim/UltiSnips"
-fi
-
-if [ ! -d "$HOME/.vim/bundle" ]; then
-	ln -fs "$DOTVIM/plugins" "$HOME/.vim/bundle"
-fi
+[[ ! -d "$HOME/.vim/UltiSnips" ]] && ln -fs "$DOTVIM/snippets" "$HOME/.vim/UltiSnips"
+[[ ! -d "$HOME/.vim/bundle" ]] && ln -fs "$DOTVIM/plugins" "$HOME/.vim/bundle"
