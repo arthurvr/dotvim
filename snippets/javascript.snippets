@@ -1,3 +1,14 @@
+global !p
+
+def camelize_module(str):
+	if str == 'child_process':
+		return 'childProcess'
+
+	components = str.split('-')
+	return components[0] + ''.join(x.title() for x in components[1:])
+
+endglobal
+
 snippet strict
 'use strict';
 $0
@@ -27,10 +38,6 @@ for ($1) {
 }
 endsnippet
 
-snippet req
-var $1 = require('$0');
-endsnippet
-
 snippet iife
 (function () {
 	$0
@@ -46,6 +53,21 @@ endsnippet
 snippet re
 require('$0')
 endsnippet
+
+# This snippet will let you type in the module name, camelcase it and use that
+# as a variable name.
+#
+# Exception is the core Node.js `child_process` module which has a snake_cased
+# name.
+#
+# Example:
+# var ghGot = require('gh-got');
+# var childProcess = require('child_process');
+#
+snippet req
+var `!p snip.rv = camelize_module(t[1])` = require('$1');
+endsnippet
+
 
 # ============================================================================
 # BDD
