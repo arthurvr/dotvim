@@ -2,6 +2,7 @@
 DOTVIM=`pwd`
 
 mkdir -p "$HOME/.vim"
+mkdir -p "$HOME/.vim/undo"
 ln -fs "$DOTVIM/config/.vimrc" "$HOME/.vimrc"
 
 mkdir -p "$HOME/.vim/UltiSnips"
