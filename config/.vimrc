@@ -25,7 +25,7 @@ nnoremap k gk
 nnoremap Y y$
 let mapleader = ','
 autocmd FileType gitcommit setlocal textwidth=72
-autocmd FileType gitcommit setlocal spell
+autocmd FileType gitcommit,markdown setlocal spell
 
 set undodir=~/.vim/undo
 set undofile
