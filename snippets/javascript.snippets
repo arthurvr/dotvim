@@ -9,48 +9,48 @@ def camelize_module(str):
 
 endglobal
 
-snippet strict
+snippet strict "strict mode"
 'use strict';
 $0
 endsnippet
 
-snippet fn
+snippet fn "function"
 function $1($2) {
 	$0
 }
 endsnippet
 
-snippet if
+snippet if "if"
 if ($1) {
 	$0
 }
 endsnippet
 
-snippet while
+snippet while "while"
 while ($1) {
 	$0
 }
 endsnippet
 
-snippet for
+snippet for "for"
 for ($1) {
 	$0
 }
 endsnippet
 
-snippet iife
+snippet iife "IIFE"
 (function () {
 	$0
 })();
 endsnippet
 
-snippet class
+snippet class "class"
 class $1 {
 	$0
 }
 endsnippet
 
-snippet re
+snippet re "require"
 require('$0')
 endsnippet
 
@@ -64,7 +64,7 @@ endsnippet
 # var ghGot = require('gh-got');
 # var childProcess = require('child_process');
 #
-snippet req
+snippet req "require to var"
 var `!p snip.rv = camelize_module(t[1])` = require('$1');
 endsnippet
 
@@ -72,19 +72,19 @@ endsnippet
 # ============================================================================
 # BDD
 # ============================================================================
-snippet it
+snippet it "it"
 it('$1', function () {
 	$0
 });
 endsnippet
 
-snippet ita
+snippet ita "async it"
 it('$1', function (done) {
 	$0
 });
 endsnippet
 
-snippet describe
+snippet describe "describe"
 describe('$1', function () {
 	$0
 });
@@ -93,19 +93,19 @@ endsnippet
 # ============================================================================
 # CommonJS assertions
 # ============================================================================
-snippet as:eq
+snippet as:eq "assert.equal"
 assert.equal($0);
 endsnippet
 
-snippet as:deq
+snippet as:deq "assert.deepEqual"
 assert.deepEqual($0);
 endsnippet
 
-snippet as:seq
+snippet as:seq "assert.strictEqual"
 assert.strictEqual($0);
 endsnippet
 
-snippet as:th
+snippet as:th "assert.throws"
 assert.throws(function () {
 	$0
 });
