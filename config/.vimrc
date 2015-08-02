@@ -22,11 +22,12 @@ set wildmenu
 set nojoinspaces
 set autoread
 set synmaxcol=2500
-nnoremap Y y$
 let mapleader = ','
+nnoremap Y y$
+map <leader>W :w !sudo tee %<CR>
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
-map <leader>W :w !sudo tee %<CR>
+autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
 
 set ignorecase
 set smartcase
@@ -55,9 +56,6 @@ set clipboard=unnamed
 if has('unnamedplus')
 	set clipboard+=unnamedplus
 endif
-
-" Enable JavaScript syntax on `.json` files
-autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
 
 nmap <leader>stt :SyntasticToggleMode<CR>
 let g:syntastic_mode_map={ 'mode': 'active',
