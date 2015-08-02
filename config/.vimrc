@@ -20,6 +20,7 @@ set history=3000
 set mouse=
 set ignorecase
 set smartcase
+set nojoinspaces
 nnoremap j gj
 nnoremap k gk
 nnoremap Y y$
