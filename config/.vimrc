@@ -19,9 +19,6 @@ set ttyfast
 set history=3000
 set mouse=
 set wildmenu
-set ignorecase
-set smartcase
-set incsearch
 set nojoinspaces
 set autoread
 nnoremap j gj
@@ -31,6 +28,10 @@ let mapleader = ','
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
 map <leader>W :w !sudo tee %<CR>
+
+set ignorecase
+set smartcase
+set incsearch
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
