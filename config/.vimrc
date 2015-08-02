@@ -18,6 +18,7 @@ set scrolloff=4
 set ttyfast
 set history=3000
 set mouse=
+set wildmenu
 set ignorecase
 set smartcase
 set incsearch
