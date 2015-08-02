@@ -56,10 +56,8 @@ if has('unnamedplus')
 	set clipboard+=unnamedplus
 endif
 
-if has('autocmd')
-	" Enable JavaScript syntax on `.json` files
-	autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
-endif
+" Enable JavaScript syntax on `.json` files
+autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
 
 nmap <leader>stt :SyntasticToggleMode<CR>
 let g:syntastic_mode_map={ 'mode': 'active',
