@@ -22,8 +22,6 @@ set wildmenu
 set nojoinspaces
 set autoread
 set synmaxcol=2500
-nnoremap j gj
-nnoremap k gk
 nnoremap Y y$
 let mapleader = ','
 autocmd FileType gitcommit setlocal textwidth=72
@@ -33,6 +31,9 @@ map <leader>W :w !sudo tee %<CR>
 set ignorecase
 set smartcase
 set incsearch
+
+nnoremap j gj
+nnoremap k gk
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
