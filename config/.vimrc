@@ -21,6 +21,7 @@ set mouse=
 set ignorecase
 set smartcase
 set nojoinspaces
+set autoread
 nnoremap j gj
 nnoremap k gk
 nnoremap Y y$
