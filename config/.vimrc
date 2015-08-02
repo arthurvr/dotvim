@@ -20,6 +20,7 @@ set history=3000
 set mouse=
 set ignorecase
 set smartcase
+set incsearch
 set nojoinspaces
 set autoread
 nnoremap j gj
