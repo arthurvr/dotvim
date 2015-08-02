@@ -26,6 +26,7 @@ nnoremap Y y$
 let mapleader = ','
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
+map <leader>W :w !sudo tee %<CR>
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
