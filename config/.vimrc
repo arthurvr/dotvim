@@ -51,8 +51,8 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
-source ~/.vim/bundle/pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+source ~/.vim/plugins/pathogen/autoload/pathogen.vim
+execute pathogen#infect('plugins/{}')
 
 colorscheme Tomorrow-Night-Bright
 
