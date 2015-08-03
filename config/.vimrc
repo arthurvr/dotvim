@@ -78,4 +78,5 @@ endif
 
 if has('gui_running')
 	set guifont=Menlo:h13
+	set linespace=8
 endif
