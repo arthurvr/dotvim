@@ -80,3 +80,23 @@ if has('gui_running')
 	set guifont=Menlo:h13
 	set linespace=8
 endif
+
+function! ExecFile()
+	" Determine what command to use
+	if &ft == "javascript"
+		let cmd = "node"
+	elseif &ft == "ruby"
+		let cmd = "ruby"
+	elseif &ft == "python"
+		let cmd = "python"
+	elseif &ft == "zsh"
+		let cmd = "zsh"
+	elseif &ft == "haskell"
+		let cmd = "runhaskell"
+	elseif &ft == "php"
+		let cmd = "php"
+	endif
+
+	" Clear the screen and execute the current file using the command
+	exec "!clear && " . cmd . " %"
+endfunction
