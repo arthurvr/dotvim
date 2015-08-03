@@ -75,3 +75,7 @@ map <leader>cc :TComment<CR>
 if filereadable(glob('~/.vimrc.local'))
 	source ~/.vimrc.local
 endif
+
+if has('gui_running')
+	set guifont=Menlo:h13
+endif
