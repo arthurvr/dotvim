@@ -77,10 +77,6 @@ let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 map <leader>cc :TComment<CR>
 
-if filereadable(glob('~/.vimrc.local'))
-	source ~/.vimrc.local
-endif
-
 if has('gui_running')
 	set guifont=Menlo:h13
 	set linespace=8
@@ -106,3 +102,7 @@ function! ExecFile()
 	" Clear the screen and execute the current file using the command
 	exec "!clear && " . cmd . " %"
 endfunction
+
+if filereadable(glob('~/.vimrc.local'))
+	source ~/.vimrc.local
+endif
