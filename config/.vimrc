@@ -25,6 +25,7 @@ set synmaxcol=2500
 let mapleader = ','
 nnoremap Y y$
 map <leader>W :w !sudo tee %<CR>
+map <leader>E :call ExecFile()<CR>
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
 autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
