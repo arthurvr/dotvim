@@ -97,6 +97,8 @@ function! ExecFile()
 		let cmd = "runhaskell"
 	elseif &ft == "php"
 		let cmd = "php"
+	elseif &ft == "rust"
+		let cmd = "cargo run"
 	endif
 
 	exec ":w"
