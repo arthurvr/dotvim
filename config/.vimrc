@@ -26,6 +26,7 @@ let mapleader = ','
 nnoremap Y y$
 map <leader>W :w !sudo tee %<CR>
 map <leader>E :call ExecFile()<CR>
+map <leader>T :call RunTests()<CR>
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
 autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
@@ -101,6 +102,19 @@ function! ExecFile()
 	exec ":w"
 	" Clear the screen and execute the current file using the command
 	exec "!clear && " . cmd . " %"
+endfunction
+
+function! RunTests()
+	" Determine what command to use
+	if &ft == "javascript"
+		let cmd = "npm test"
+	elseif &ft == "rust"
+		let cmd = "cargo test"
+	endif
+
+	exec ":w"
+	" Clear the screen and execute the current file using the command
+	exec "!clear && " . cmd
 endfunction
 
 if filereadable(glob('~/.vimrc.local'))
