@@ -1,0 +1,103 @@
+[submodule "arduino"]
+	path = plugins/arduino
+	url = https://github.com/tclem/vim-arduino.git
+
+[submodule "blade"]
+	path = plugins/blade
+	url = https://github.com/xsbeats/vim-blade.git
+
+[submodule "coffee"]
+	path = plugins/coffee
+	url = https://github.com/kchmck/vim-coffee-script.git
+
+[submodule "colorschemes"]
+	path = plugins/colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+
+[submodule "dart"]
+	path = plugins/dart
+	url = https://github.com/dart-lang/dart-vim-plugin.git
+
+[submodule "editorconfig"]
+	path = plugins/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim
+
+[submodule "elm"]
+	path = plugins/elm
+	url = https://github.com/lambdatoast/elm.vim.git
+
+[submodule "g"]
+	path = plugins/g
+	url = https://github.com/szw/vim-g.git
+
+[submodule "go"]
+	path = plugins/go
+	url = https://github.com/fatih/vim-go.git
+
+[submodule "haskell"]
+	path = plugins/haskell
+	url = https://github.com/neovimhaskell/haskell-vim.git
+
+[submodule "jade"]
+	path = plugins/jade
+	url = https://github.com/digitaltoad/vim-jade.git
+
+[submodule "javascript"]
+	path = plugins/javascript
+	url = https://github.com/jelera/vim-javascript-syntax.git
+
+[submodule "less"]
+	path = plugins/less
+	url = https://github.com/groenewege/vim-less.git
+
+[submodule "markdown"]
+	path = plugins/markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+
+[submodule "pathogen"]
+	path = plugins/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+
+[submodule "powerline"]
+	path = plugins/powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+
+[submodule "purescript"]
+	path = plugins/purescript
+	url = https://github.com/raichoo/purescript-vim.git
+
+[submodule "rust"]
+	path = plugins/rust
+	url = https://github.com/rust-lang/rust.vim.git
+
+[submodule "scss"]
+	path = plugins/scss
+	url = https://github.com/cakebaker/scss-syntax.vim.git
+
+[submodule "slim"]
+	path = plugins/slim
+	url = https://github.com/slim-template/vim-slim.git
+
+[submodule "syntastic"]
+	path = plugins/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+
+[submodule "tcomment"]
+	path = plugins/tcomment
+	url = https://github.com/tomtom/tcomment_vim.git
+
+[submodule "toml"]
+	path = plugins/toml
+	url = https://github.com/cespare/vim-toml.git
+
+[submodule "typescript"]
+	path = plugins/typescript
+	url = https://github.com/leafgarland/typescript-vim
+
+[submodule "ultisnips"]
+	path = plugins/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+
+[submodule "unicode"]
+	path = plugins/unicode
+	url = https://github.com/chrisbra/unicode.vim.git
