@@ -1,0 +1,7 @@
+# Hack to be able to use the words 'snippet' and 'endsnippet'.
+# Hacky, but it works.
+snippet snippet "Snippet definition" b
+`!p snip.rv = "snippet"` ${1}
+$0
+`!p snip.rv = "endsnippet"`
+endsnippet
