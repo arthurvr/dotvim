@@ -101,3 +101,7 @@
 [submodule "unicode"]
 	path = plugins/unicode
 	url = https://github.com/chrisbra/unicode.vim.git
+
+[submodule "haskellConcealPlus"]
+	path = plugins/haskellConcealPlus
+	url = https://github.com/enomsg/vim-haskellConcealPlus.git
