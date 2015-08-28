@@ -22,22 +22,15 @@ set wildmenu
 set nojoinspaces
 set autoread
 set synmaxcol=2500
+
 let mapleader = ','
 nnoremap Y y$
 map <leader>W :w !sudo tee %<CR>
 map <leader>E :call ExecFile()<CR>
 map <leader>T :call RunTests()<CR>
-autocmd FileType gitcommit setlocal textwidth=72
-autocmd FileType gitcommit,markdown setlocal spell
-autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
-
-set ignorecase
-set smartcase
-set incsearch
-
+nmap <leader>stt :SyntasticToggleMode<CR>
 nnoremap j gj
 nnoremap k gk
-
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -46,6 +39,15 @@ imap <Up> <NOP>
 imap <Down> <NOP>
 imap <Left> <NOP>
 imap <Right> <NOP>
+map <leader>cc :TComment<CR>
+
+autocmd FileType gitcommit setlocal textwidth=72
+autocmd FileType gitcommit,markdown setlocal spell
+autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
+
+set ignorecase
+set smartcase
+set incsearch
 
 set undodir=~/.vim/undo
 set undofile
@@ -63,7 +65,6 @@ if has('unnamedplus')
 	set clipboard+=unnamedplus
 endif
 
-nmap <leader>stt :SyntasticToggleMode<CR>
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html', 'json'] }
@@ -75,8 +76,6 @@ let g:Powerline_symbols = 'fancy'
 let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
-
-map <leader>cc :TComment<CR>
 
 if has('gui_running')
 	set guifont=Menlo:h13
