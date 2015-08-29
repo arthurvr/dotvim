@@ -41,3 +41,8 @@ This repo is basically a collection of things I stole from other people. Namely:
 * [Nicolas Gallagher](https://github.com/necolas/dotfiles)
 * [Janus](https://github.com/carlhuda/janus)
 * ...
+
+
+## License
+
+MIT © [Arthur Verschaeve](https://github.com/arthurvr)
