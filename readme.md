@@ -45,4 +45,4 @@ This repo is basically a collection of things I stole from other people. Namely:
 
 ## License
 
-MIT © [Arthur Verschaeve](https://github.com/arthurvr)
+MIT © [Arthur Verschaeve](http://arthurverschaeve.be)

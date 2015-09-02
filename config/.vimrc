@@ -101,6 +101,7 @@ function! ExecFile()
 	endif
 
 	exec ":w"
+
 	" Clear the screen and execute the current file using the command
 	exec "!clear && " . cmd . " %"
 endfunction
@@ -114,6 +115,7 @@ function! RunTests()
 	endif
 
 	exec ":w"
+
 	" Clear the screen and execute the current file using the command
 	exec "!clear && " . cmd
 endfunction
