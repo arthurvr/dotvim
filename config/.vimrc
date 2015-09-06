@@ -49,6 +49,9 @@ set ignorecase
 set smartcase
 set incsearch
 
+set splitright
+set splitbelow
+
 set undodir=~/.vim/undo
 set undofile
 set undolevels=1000
