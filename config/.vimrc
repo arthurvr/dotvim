@@ -67,7 +67,7 @@ endif
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html', 'json'] }
+                     \ 'passive_filetypes': ['html', 'json', 'javascript'] }
 let g:syntastic_haskell_checkers = ['hlint', 'hdevtools']
 
 set laststatus=2
