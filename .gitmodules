@@ -80,8 +80,7 @@
 
 [submodule "syntastic"]
 	path = plugins/syntastic
-	url = https://github.com/arthurvr/syntastic.git
-	branch = xo
+	url = https://github.com/scrooloose/syntastic.git
 
 [submodule "tcomment"]
 	path = plugins/tcomment

@@ -69,10 +69,9 @@ if has('unnamedplus')
 endif
 
 let g:syntastic_mode_map={ 'mode': 'active',
-                     \ 'active_filetypes': ['javascript'],
-                     \ 'passive_filetypes': ['html', 'json'] }
+                     \ 'active_filetypes': [],
+                     \ 'passive_filetypes': ['html', 'json', 'javascript'] }
 let g:syntastic_haskell_checkers = ['hlint', 'hdevtools']
-let g:syntastic_javascript_checkers = ['xo']
 let g:syntastic_check_on_open = 1
 
 set laststatus=2
