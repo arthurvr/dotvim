@@ -70,9 +70,16 @@ endif
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html', 'json', 'javascript'] }
+                     \ 'passive_filetypes': ['html', 'json'] }
 let g:syntastic_haskell_checkers = ['hlint', 'hdevtools']
+
 let g:syntastic_check_on_open = 1
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_generic = 1
+let g:syntastic_javascript_eslint_exec = 'xo'
+let g:syntastic_javascript_eslint_args = '--compact'
+
 
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
