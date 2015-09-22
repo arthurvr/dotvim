@@ -110,3 +110,7 @@
 [submodule "vim-glsl"]
 	path = plugins/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
+
+[submodule "vim-jsx"]
+	path = plugins/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
