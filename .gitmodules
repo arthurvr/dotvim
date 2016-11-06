@@ -58,17 +58,9 @@
 	path = plugins/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 
-[submodule "powerline"]
-	path = plugins/powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
-
 [submodule "purescript"]
 	path = plugins/purescript
 	url = https://github.com/raichoo/purescript-vim.git
-
-[submodule "rust"]
-	path = plugins/rust
-	url = https://github.com/rust-lang/rust.vim.git
 
 [submodule "scss"]
 	path = plugins/scss

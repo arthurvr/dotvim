@@ -82,7 +82,6 @@ let g:syntastic_javascript_eslint_args = '--compact'
 
 
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
 
 let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
