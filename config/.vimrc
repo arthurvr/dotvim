@@ -108,6 +108,8 @@ function! ExecFile()
 		let cmd = "php"
 	elseif &ft == "rust"
 		let cmd = "cargo run"
+	elseif &ft == "go"
+		let cmd = "go run"
 	endif
 
 	exec ":w"
