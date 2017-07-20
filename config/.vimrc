@@ -24,13 +24,20 @@ set autoread
 set synmaxcol=2500
 
 let mapleader = ','
-nnoremap Y y$
+map <leader>s :w<CR>
 map <leader>W :w !sudo tee %<CR>
 map <leader>E :call ExecFile()<CR>
 map <leader>T :call RunTests()<CR>
 nmap <leader>stt :SyntasticToggleMode<CR>
+
+nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
+
+map <leader>cc :TComment<CR>
+nmap <leader>rc :tabedit ~/.vimrc.local<CR>
+map <leader>gl :Google
+
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -39,9 +46,6 @@ imap <Up> <NOP>
 imap <Down> <NOP>
 imap <Left> <NOP>
 imap <Right> <NOP>
-map <leader>cc :TComment<CR>
-nmap <leader>rc :tabedit ~/.vimrc.local<CR>
-map <leader>gl :Google
 
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
