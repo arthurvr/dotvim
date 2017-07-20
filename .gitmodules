@@ -14,10 +14,6 @@
 	path = plugins/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
 
-[submodule "dart"]
-	path = plugins/dart
-	url = https://github.com/dart-lang/dart-vim-plugin.git
-
 [submodule "editorconfig"]
 	path = plugins/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim
