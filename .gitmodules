@@ -26,10 +26,6 @@
 	path = plugins/elm
 	url = https://github.com/lambdatoast/elm.vim.git
 
-[submodule "g"]
-	path = plugins/g
-	url = https://github.com/szw/vim-g.git
-
 [submodule "go"]
 	path = plugins/go
 	url = https://github.com/fatih/vim-go.git
