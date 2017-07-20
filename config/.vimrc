@@ -41,6 +41,7 @@ imap <Left> <NOP>
 imap <Right> <NOP>
 map <leader>cc :TComment<CR>
 nmap <leader>rc :tabedit ~/.vimrc.local<CR>
+map <leader>gl :Google
 
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
