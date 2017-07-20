@@ -6,10 +6,6 @@
 	path = plugins/blade
 	url = https://github.com/xsbeats/vim-blade.git
 
-[submodule "coffee"]
-	path = plugins/coffee
-	url = https://github.com/kchmck/vim-coffee-script.git
-
 [submodule "colorschemes"]
 	path = plugins/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
