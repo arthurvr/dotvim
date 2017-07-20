@@ -105,3 +105,11 @@
 [submodule "vim-jsx"]
 	path = plugins/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+
+[submodule "vim-g"]
+	path = plugins/vim-g
+	url = https://github.com/szw/vim-g.git
+
+[submodule "vim-racket"]
+	path = plugins/vim-racket
+	url = https://github.com/wlangstroth/vim-racket.git
