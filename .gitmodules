@@ -86,10 +86,6 @@
 	path = plugins/haskellConcealPlus
 	url = https://github.com/enomsg/vim-haskellConcealPlus.git
 
-[submodule "vim-glsl"]
-	path = plugins/vim-glsl
-	url = https://github.com/tikhomirov/vim-glsl.git
-
 [submodule "vim-jsx"]
 	path = plugins/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
