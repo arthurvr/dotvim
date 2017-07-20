@@ -40,6 +40,14 @@ if ($1) {
 }
 endsnippet
 
+snippet ife "if-else-statement"
+if ($1) {
+	$2
+} else {
+	$3
+}
+endsnippet
+
 snippet do "do-while"
 do {
 	$2
@@ -60,4 +68,14 @@ endsnippet
 
 snippet ret "return"
 return $0;
+endsnippet
+
+snippet fn "function"
+$1 $2($3) {
+	$4
+}
+endsnippet
+
+snippet pr "printf"
+printf("$1\n", $0);
 endsnippet
