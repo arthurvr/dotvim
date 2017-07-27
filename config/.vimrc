@@ -112,6 +112,8 @@ function! ExecFile()
 		let cmd = "rdmd"
 	elseif &ft == "go"
 		let cmd = "go run"
+	elseif &ft == "arduino"
+		let cmd = "arduino --upload %"
 	endif
 
 	exec ":w"
