@@ -1,8 +1,9 @@
+syntax on
+
 set nocompatible
 set encoding=utf-8 nobomb
 set t_Co=256
 set number
-syntax on
 set showmode
 set showcmd
 set gcr=n:blinkon0
@@ -21,6 +22,11 @@ set mouse=
 set wildmenu
 set nojoinspaces
 set autoread
+set ignorecase
+set smartcase
+set incsearch
+set splitright
+set splitbelow
 set synmaxcol=2500
 
 let mapleader = ','
@@ -50,13 +56,6 @@ imap <Right> <NOP>
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd FileType gitcommit,markdown setlocal spell
 autocmd BufRead,BufNewFile *.json,.jshintrc,.jscsrc,.eslintrc set filetype=json
-
-set ignorecase
-set smartcase
-set incsearch
-
-set splitright
-set splitbelow
 
 set undodir=~/.vim/undo
 set undofile
