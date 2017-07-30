@@ -32,8 +32,8 @@ set synmaxcol=2500
 let mapleader = ','
 map <leader>s :w<CR>
 map <leader>W :w !sudo tee %<CR>
-map <leader>E :call ExecFile()<CR>
-map <leader>T :call RunTests()<CR>
+map <leader>e :call ExecFile()<CR>
+map <leader>t :call RunTests()<CR>
 nmap <leader>stt :SyntasticToggleMode<CR>
 
 nnoremap Y y$
