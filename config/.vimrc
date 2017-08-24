@@ -34,6 +34,7 @@ map <leader>s :w<CR>
 map <leader>W :w !sudo tee %<CR>
 map <leader>e :call ExecFile()<CR>
 map <leader>t :call RunTests()<CR>
+map <leader>hb :!hub browse<CR>
 nmap <leader>stt :SyntasticToggleMode<CR>
 
 nnoremap Y y$
