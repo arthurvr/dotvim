@@ -95,32 +95,40 @@ endif
 function! ExecFile()
 	" Determine what command to use
 	if &ft == "javascript"
-		let cmd = "node"
+		let cmd = "node %"
 	elseif &ft == "ruby"
-		let cmd = "ruby"
+		let cmd = "ruby %"
 	elseif &ft == "python"
-		let cmd = "python"
+		let cmd = "python3 %"
 	elseif &ft == "zsh"
-		let cmd = "zsh"
+		let cmd = "zsh %"
 	elseif &ft == "haskell"
-		let cmd = "runhaskell"
+		let cmd = "runhaskell %"
 	elseif &ft == "php"
-		let cmd = "php"
+		let cmd = "php %"
 	elseif &ft == "rust"
-		let cmd = "cargo run"
+		let cmd = "cargo run %"
 	elseif &ft == "d"
-		let cmd = "rdmd"
+		let cmd = "rdmd %"
 	elseif &ft == "go"
-		let cmd = "go run"
+		let cmd = "go run %"
+	elseif &ft == "racket"
+		let cmd = "racket %"
+	elseif &ft == "sql"
+		exec "w | !clear && sqlite3 < %"
+	elseif &ft == "c"
+		let cmd = "cc -lsqlite3 % && ./a.out"
 	elseif &ft == "arduino"
 		let cmd = "arduino --upload %"
 	endif
+	if &ft != "sql"
+		exec ":w"
 
-	exec ":w"
-
-	" Clear the screen and execute the current file using the command
-	exec "!clear && " . cmd . " %"
+		" Clear the screen and execute the current file using the command
+		exec "!clear && " . cmd
+	endif
 endfunction
+
 
 function! RunTests()
 	" Determine what command to use
