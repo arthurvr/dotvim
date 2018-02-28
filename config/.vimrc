@@ -118,9 +118,14 @@ function! ExecFile()
 		exec "w | !clear && sqlite3 < %"
 	elseif &ft == "c"
 		let cmd = "cc -lsqlite3 % && ./a.out"
+	elseif &ft == "cpp"
+		let cmd = "clang++ % -o out.tmp && ./out.tmp && rm out.tmp"
 	elseif &ft == "arduino"
 		let cmd = "arduino --upload %"
+	elseif &ft == "sh"
+		let cmd = "bash %"
 	endif
+
 	if &ft != "sql"
 		exec ":w"
 
