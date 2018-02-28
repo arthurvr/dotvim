@@ -2,10 +2,6 @@
 	path = plugins/arduino
 	url = https://github.com/tclem/vim-arduino.git
 
-[submodule "blade"]
-	path = plugins/blade
-	url = https://github.com/xsbeats/vim-blade.git
-
 [submodule "colorschemes"]
 	path = plugins/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
@@ -14,49 +10,9 @@
 	path = plugins/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim
 
-[submodule "elm"]
-	path = plugins/elm
-	url = https://github.com/lambdatoast/elm.vim.git
-
-[submodule "go"]
-	path = plugins/go
-	url = https://github.com/fatih/vim-go.git
-
-[submodule "haskell"]
-	path = plugins/haskell
-	url = https://github.com/neovimhaskell/haskell-vim.git
-
-[submodule "jade"]
-	path = plugins/jade
-	url = https://github.com/digitaltoad/vim-jade.git
-
-[submodule "javascript"]
-	path = plugins/javascript
-	url = https://github.com/jelera/vim-javascript-syntax.git
-
-[submodule "less"]
-	path = plugins/less
-	url = https://github.com/groenewege/vim-less.git
-
-[submodule "markdown"]
-	path = plugins/markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-
 [submodule "pathogen"]
 	path = plugins/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
-
-[submodule "purescript"]
-	path = plugins/purescript
-	url = https://github.com/raichoo/purescript-vim.git
-
-[submodule "scss"]
-	path = plugins/scss
-	url = https://github.com/cakebaker/scss-syntax.vim.git
-
-[submodule "slim"]
-	path = plugins/slim
-	url = https://github.com/slim-template/vim-slim.git
 
 [submodule "syntastic"]
 	path = plugins/syntastic
@@ -65,14 +21,6 @@
 [submodule "tcomment"]
 	path = plugins/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
-
-[submodule "toml"]
-	path = plugins/toml
-	url = https://github.com/cespare/vim-toml.git
-
-[submodule "typescript"]
-	path = plugins/typescript
-	url = https://github.com/leafgarland/typescript-vim
 
 [submodule "ultisnips"]
 	path = plugins/ultisnips
@@ -86,14 +34,10 @@
 	path = plugins/haskellConcealPlus
 	url = https://github.com/enomsg/vim-haskellConcealPlus.git
 
-[submodule "vim-jsx"]
-	path = plugins/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
-
 [submodule "vim-g"]
 	path = plugins/vim-g
 	url = https://github.com/szw/vim-g.git
 
-[submodule "vim-racket"]
-	path = plugins/vim-racket
-	url = https://github.com/wlangstroth/vim-racket.git
+[submodule "vim-polyglot"]
+	path = plugins/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
