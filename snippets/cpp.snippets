@@ -1,0 +1,84 @@
+snippet stdoc
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	$0
+
+	return EXIT_SUCCESS;
+}
+endsnippet
+
+snippet while "while-loop"
+while ($1) {
+	$2
+}
+endsnippet
+
+snippet struct "struct"
+struct $1 {
+	$2
+};
+endsnippet
+
+snippet for "for-loop"
+for ($1) {
+	$2
+}
+endsnippet
+
+snippet inc "#include"
+#include <$1>
+endsnippet
+
+snippet def "#define"
+#define $1 $2
+endsnippet
+
+snippet if "if-statement"
+if ($1) {
+	$2
+}
+endsnippet
+
+snippet ife "if-else-statement"
+if ($1) {
+	$2
+} else {
+	$3
+}
+endsnippet
+
+snippet do "do-while"
+do {
+	$2
+} while ($1);
+endsnippet
+
+snippet switch "switch"
+switch ($1) {
+	$2
+}
+endsnippet
+
+snippet case "case"
+case $1:
+	$2
+	break;
+endsnippet
+
+snippet ret "return"
+return $0;
+endsnippet
+
+snippet fn "function"
+$1 $2($3) {
+	$4
+}
+endsnippet
+
+snippet pr "printf"
+cout << $0 << endl;
+endsnippet
