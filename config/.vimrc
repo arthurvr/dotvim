@@ -36,6 +36,7 @@ map <leader>e :call ExecFile()<CR>
 map <leader>t :call RunTests()<CR>
 map <leader>hb :!hub browse<CR>
 nmap <leader>stt :SyntasticToggleMode<CR>
+nmap <leader>ln :set invnumber<CR>
 
 nnoremap Y y$
 nnoremap j gj
