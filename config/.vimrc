@@ -76,7 +76,7 @@ if has('unnamedplus')
 endif
 
 let g:syntastic_mode_map={ 'mode': 'active',
-                     \ 'active_filetypes': [],
+                     \ 'active_filetypes': ['python'],
                      \ 'passive_filetypes': ['html', 'json'] }
 let g:syntastic_haskell_checkers = ['hlint', 'hdevtools']
 
