@@ -44,7 +44,6 @@ nnoremap k gk
 
 map <leader>cc :TComment<CR>
 nmap <leader>rc :tabedit ~/.vimrc.local<CR>
-map <leader>gl :Google
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>

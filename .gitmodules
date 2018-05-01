@@ -34,10 +34,6 @@
 	path = plugins/haskellConcealPlus
 	url = https://github.com/enomsg/vim-haskellConcealPlus.git
 
-[submodule "vim-g"]
-	path = plugins/vim-g
-	url = https://github.com/szw/vim-g.git
-
 [submodule "vim-polyglot"]
 	path = plugins/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
