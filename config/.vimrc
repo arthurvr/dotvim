@@ -37,13 +37,15 @@ map <leader>t :call RunTests()<CR>
 map <leader>hb :!hub browse<CR>
 nmap <leader>stt :SyntasticToggleMode<CR>
 nmap <leader>ln :set invnumber<CR>
-
+map <leader>tx :LLPStartPreview<CR>
 nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
 
 map <leader>cc :TComment<CR>
 nmap <leader>rc :tabedit ~/.vimrc.local<CR>
+
+let g:livepreview_previewer = 'open -a Preview'
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -75,8 +77,8 @@ if has('unnamedplus')
 endif
 
 let g:syntastic_mode_map={ 'mode': 'active',
-                     \ 'active_filetypes': ['python'],
-                     \ 'passive_filetypes': ['html', 'json'] }
+                     \ 'active_filetypes': [],
+                     \ 'passive_filetypes': ['python', 'html', 'json'] }
 let g:syntastic_haskell_checkers = ['hlint', 'hdevtools']
 
 let g:syntastic_check_on_open = 1
@@ -119,9 +121,11 @@ function! ExecFile()
 	elseif &ft == "c"
 		let cmd = "cc -lsqlite3 % && ./a.out"
 	elseif &ft == "cpp"
-		let cmd = "clang++ % -o out.tmp && ./out.tmp && rm out.tmp"
+		let cmd = "clang++ -std=c++11 % -o out.tmp && ./out.tmp && rm out.tmp"
 	elseif &ft == "arduino"
 		let cmd = "arduino --upload %"
+	elseif &ft == "java"
+		let cmd = "javac % && java -cp %:p:h %:t:r"
 	elseif &ft == "sh"
 		let cmd = "bash %"
 	endif
