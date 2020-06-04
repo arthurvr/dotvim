@@ -1,5 +1,3 @@
 language: objective-c
-install:
-  - brew install macvim --override-system-vim
 script:
   - ./dotvim && vim +q
