@@ -39,5 +39,5 @@
 	url = https://github.com/sheerun/vim-polyglot.git
 
 [submodule "vim-latex-live-preview"]
-	path = plugins/vim-latex-live-previeuw
-	url = git@github.com:xuhdev/vim-latex-live-preview.git
+	path = plugins/vim-latex-live-preview
+	url = https://github.com/xuhdev/vim-latex-live-preview.git
