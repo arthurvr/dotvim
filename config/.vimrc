@@ -68,7 +68,7 @@ set undoreload=10000
 source ~/.vim/plugins/pathogen/autoload/pathogen.vim
 execute pathogen#infect('plugins/{}')
 
-colorscheme Tomorrow-Night-Bright
+colorscheme PaperColor
 
 " Use the system clipboard
 set clipboard=unnamed

@@ -1,6 +1,6 @@
 [submodule "colorschemes"]
 	path = plugins/colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
+	url = https://github.com/rafi/awesome-vim-colorschemes.git
 
 [submodule "editorconfig"]
 	path = plugins/editorconfig
