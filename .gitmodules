@@ -1,7 +1,3 @@
-[submodule "arduino"]
-	path = plugins/arduino
-	url = https://github.com/tclem/vim-arduino.git
-
 [submodule "colorschemes"]
 	path = plugins/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
