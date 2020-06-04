@@ -122,6 +122,8 @@ function! ExecFile()
 		let cmd = "clang++ -std=c++11 % -o out.tmp && ./out.tmp && rm out.tmp"
 	elseif &ft == "arduino"
 		let cmd = "arduino --upload %"
+	elseif &ft == "java"
+		let cmd = "javac % && java -cp %:p:h %:t:r"
 	elseif &ft == "sh"
 		let cmd = "bash %"
 	endif
