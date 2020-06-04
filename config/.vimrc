@@ -119,7 +119,7 @@ function! ExecFile()
 	elseif &ft == "c"
 		let cmd = "cc -lsqlite3 % && ./a.out"
 	elseif &ft == "cpp"
-		let cmd = "clang++ % -o out.tmp && ./out.tmp && rm out.tmp"
+		let cmd = "clang++ -std=c++11 % -o out.tmp && ./out.tmp && rm out.tmp"
 	elseif &ft == "arduino"
 		let cmd = "arduino --upload %"
 	elseif &ft == "sh"
