@@ -1,6 +1,7 @@
 syntax on
 
 set nocompatible
+filetype plugin on
 set encoding=utf-8 nobomb
 set t_Co=256
 set number
@@ -90,14 +91,16 @@ let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 if has('gui_running')
-	set guifont=Menlo:h13
-	set linespace=8
+	set guifont=Menlo:h12
+	set linespace=5
 endif
 
 function! ExecFile()
 	" Determine what command to use
 	if &ft == "javascript"
 		let cmd = "node %"
+	elseif &ft == "typescript"
+		let cmd = "ts-node %"
 	elseif &ft == "ruby"
 		let cmd = "ruby %"
 	elseif &ft == "python"
