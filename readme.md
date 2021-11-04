@@ -1,4 +1,4 @@
-# dotvim [![Build Status](https://travis-ci.org/arthurvr/dotvim.svg?branch=master)](https://travis-ci.org/arthurvr/dotvim)
+# dotvim
 
 > My personal Vim configuration
 
