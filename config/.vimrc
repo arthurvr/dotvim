@@ -123,7 +123,7 @@ function! ExecFile()
 	elseif &ft == "sql"
 		exec "w | !clear && sqlite3 < %"
 	elseif &ft == "c"
-		let cmd = "cc -lsqlite3 % && ./a.out"
+		let cmd = "cc % && ./a.out"
 	elseif &ft == "cpp"
 		let cmd = "clang++ -std=c++11 % -o out.tmp && ./out.tmp && rm out.tmp"
 	elseif &ft == "java"
