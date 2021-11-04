@@ -5,6 +5,7 @@ filetype plugin on
 set encoding=utf-8 nobomb
 set t_Co=256
 set number
+set relativenumber
 set showmode
 set showcmd
 set gcr=n:blinkon0
@@ -68,6 +69,7 @@ set undoreload=10000
 source ~/.vim/plugins/pathogen/autoload/pathogen.vim
 execute pathogen#infect('plugins/{}')
 
+set background=dark
 colorscheme PaperColor
 
 " Use the system clipboard
