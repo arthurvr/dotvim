@@ -33,7 +33,3 @@
 [submodule "vim-polyglot"]
 	path = plugins/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
-
-[submodule "vim-latex-live-preview"]
-	path = plugins/vim-latex-live-preview
-	url = https://github.com/xuhdev/vim-latex-live-preview.git

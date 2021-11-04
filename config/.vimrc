@@ -38,7 +38,6 @@ map <leader>t :call RunTests()<CR>
 map <leader>hb :!hub browse<CR>
 nmap <leader>stt :SyntasticToggleMode<CR>
 nmap <leader>ln :set invnumber<CR>
-map <leader>tx :LLPStartPreview<CR>
 nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
