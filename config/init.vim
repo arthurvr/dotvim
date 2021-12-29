@@ -2,7 +2,6 @@ syntax on
 
 set nocompatible
 filetype plugin on
-set encoding=utf-8 nobomb
 set t_Co=256
 set number
 set relativenumber
@@ -40,11 +39,19 @@ nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
 
+" Todo: use this to install Packer
+" https://github.com/wbthomason/packer.nvim#bootstrapping
 " Load plugins.
 lua require('plugins')
 
 " Shortcut to comment stuff
 map <leader>cc :TComment<CR>
+
+" LeaderF shortcuts
+let g:Lf_ShortcutF = "<leader>notused"
+map <leader>ff :Leaderf file --popup<CR>
+map <leader>fr :Leaderf mru --popup<CR>
+map <leader>fg :Leaderf rg --popup<CR>
 
 " Local configuration file and shortcut to open it.
 nmap <leader>rc :tabedit ~/.config/nvim/local.vim<CR>
