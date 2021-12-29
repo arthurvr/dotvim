@@ -8,7 +8,6 @@ set number
 set relativenumber
 set showmode
 set showcmd
-set gcr=n:blinkon0
 set backspace=indent,eol,start
 set tabstop=4
 set shiftwidth=4
@@ -40,7 +39,6 @@ map <leader>hb :!hub browse<CR>
 nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
-
 
 " Load plugins.
 lua require('plugins')
