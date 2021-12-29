@@ -65,14 +65,14 @@ function! ExecFile()
 	endif
 
 	exec ":w"
-	exec ":FloatermNew! clear && " . cmd . " && exit &> /dev/null"
+	exec ":FloatermNew! --autoclose=2 clear && " . cmd . " && exit &> /dev/null"
 endfunction
 map <leader>e :call ExecFile()<CR>
 
 " Ultisnips configuration
-let g:UltiSnipsSnippetDirectories=['~/.config/nvim/snippets/']
+let g:UltiSnipsSnippetDirectories=['~/.config/nvim/my_snippets/']
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Local configuration file and shortcut to open it.
