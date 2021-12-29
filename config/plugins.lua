@@ -30,4 +30,7 @@ return require('packer').startup(function()
 
 	-- Floating terminal windows
 	use 'voldikss/vim-floaterm'
+
+	-- Ultisnips
+	use 'SirVer/ultisnips'
 end)

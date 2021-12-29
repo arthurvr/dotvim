@@ -69,6 +69,12 @@ function! ExecFile()
 endfunction
 map <leader>e :call ExecFile()<CR>
 
+" Ultisnips configuration
+let g:UltiSnipsSnippetDirectories=['~/.config/nvim/snippets/']
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " Local configuration file and shortcut to open it.
 nmap <leader>rc :tabedit ~/.config/nvim/local.vim<CR>
 if filereadable(glob('~/.config/nvim/local.vim'))
