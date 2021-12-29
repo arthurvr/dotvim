@@ -1,0 +1,7 @@
+#!/bin/bash
+DOTVIM=`pwd`
+
+ln -fs "$DOTVIM/config/init.vim" "$HOME/.config/nvim/init.vim"
+mkdir "$HOME/.config/nvim/lua/"
+ln -fs "$DOTVIM/config/plugins.lua" "$HOME/.config/nvim/lua/plugins.lua"
+touch "$HOME/.config/nvim/local.vim"

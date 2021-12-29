@@ -1,8 +1,0 @@
-#!/bin/bash
-DOTVIM=`pwd`
-
-mkdir -p "$HOME/.vim"
-mkdir -p "$HOME/.vim/undo"
-ln -fs "$DOTVIM/config/.vimrc" "$HOME/.vimrc"
-[[ ! -d "$HOME/.vim/UltiSnips" ]] && ln -fs "$DOTVIM/snippets" "$HOME/.vim/UltiSnips"
-[[ ! -d "$HOME/.vim/plugins" ]] && ln -fs "$DOTVIM/plugins" "$HOME/.vim/plugins"
