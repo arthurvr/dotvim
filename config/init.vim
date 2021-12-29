@@ -53,6 +53,22 @@ map <leader>ff :Leaderf file --popup<CR>
 map <leader>fr :Leaderf mru --popup<CR>
 map <leader>fg :Leaderf rg --popup<CR>
 
+" Shortcut to open float-term
+map <leader>te :FloatermNew<CR>
+
+" Function to quickly execute a file in a floating terminal window
+function! ExecFile()
+	if &ft == "haskell"
+		let cmd = "runhaskell %"
+	elseif &ft == "java"
+		let cmd = "javac % && java %:t:r"
+	endif
+
+	exec ":w"
+	exec ":FloatermNew! clear && " . cmd . " && exit &> /dev/null"
+endfunction
+map <leader>e :call ExecFile()<CR>
+
 " Local configuration file and shortcut to open it.
 nmap <leader>rc :tabedit ~/.config/nvim/local.vim<CR>
 if filereadable(glob('~/.config/nvim/local.vim'))

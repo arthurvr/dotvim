@@ -27,4 +27,7 @@ return require('packer').startup(function()
 		'goolord/alpha-nvim',
 		config = [[require('alpha-nvim')]]
 	}
+
+	-- Floating terminal windows
+	use 'voldikss/vim-floaterm'
 end)
