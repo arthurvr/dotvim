@@ -19,7 +19,9 @@ dashboard.section.buttons.val = {
 	dashboard.button( "Leader f r", "  > Recent files"   , ":Leaderf mru --popup<CR>"),
 	dashboard.button( "Leader f g", "  > Project grep" , ":Leaderf rg --popup<CR>"),
 	dashboard.button( "e", "  > New file" , ":enew <CR>"),
+	dashboard.button( "Leader u p", "  > Update plugins", ":PackerUpdate<CR>"),
 	dashboard.button( "q", "  > Quit NVIM", ":qa<CR>"),
+
 }
 
 local fortune = require("alpha.fortune")

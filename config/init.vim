@@ -44,6 +44,9 @@ nnoremap k gk
 " Load plugins.
 lua require('plugins')
 
+" Shortcut to update plugins
+map <leader>up :PackerUpdate<CR>
+
 " Shortcut to comment stuff
 map <leader>cc :TComment<CR>
 
