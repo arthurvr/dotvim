@@ -65,7 +65,7 @@ function! ExecFile()
 	endif
 
 	exec ":w"
-	exec ":FloatermNew! --autoclose=2 clear && " . cmd . " && exit &> /dev/null"
+	exec ":FloatermNew --autoclose=2 " . cmd . " && exit &> /dev/null"
 endfunction
 map <leader>e :call ExecFile()<CR>
 
