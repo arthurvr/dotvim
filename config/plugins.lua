@@ -33,4 +33,7 @@ return require('packer').startup(function()
 
 	-- Ultisnips
 	use 'SirVer/ultisnips'
+
+	-- Little help with brackets, quotes, XML tags, parentheses, ...
+	use 'tpope/vim-surround'
 end)
