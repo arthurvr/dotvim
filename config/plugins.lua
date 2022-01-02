@@ -39,4 +39,7 @@ return require('packer').startup(function()
 
 	-- Renders markdown within vim
 	use 'ellisonleao/glow.nvim'
+
+	-- Emmet for html editing
+	use 'mattn/emmet-vim'
 end)
