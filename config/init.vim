@@ -61,14 +61,19 @@ map <leader>te :FloatermNew<CR>
 
 " Function to quickly execute a file in a floating terminal window
 function! ExecFile()
-	if &ft == "haskell"
-		let cmd = "runhaskell %"
-	elseif &ft == "java"
-		let cmd = "javac % && java %:t:r"
-	endif
+	if &ft == "markdown"
+		exec ":w"
+		exec ":Glow %"
+	else
+		if &ft == "haskell"
+			let cmd = "runhaskell %"
+		elseif &ft == "java"
+			let cmd = "javac % && java %:t:r"
+		endif
 
-	exec ":w"
-	exec ":FloatermNew --autoclose=2 " . cmd . " && exit &> /dev/null"
+		exec ":w"
+		exec ":FloatermNew --autoclose=2 " . cmd . " && exit &> /dev/null"
+	endif
 endfunction
 map <leader>e :call ExecFile()<CR>
 
