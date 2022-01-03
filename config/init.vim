@@ -83,6 +83,13 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" Lualine setup
+lua << END
+require('lualine').setup {
+	options = { theme = 'codedark' }
+}
+END
+
 " Local configuration file and shortcut to open it.
 nmap <leader>rc :tabedit ~/.config/nvim/local.vim<CR>
 if filereadable(glob('~/.config/nvim/local.vim'))

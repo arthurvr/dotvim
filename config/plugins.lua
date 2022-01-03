@@ -42,4 +42,11 @@ return require('packer').startup(function()
 
 	-- Emmet for html editing
 	use 'mattn/emmet-vim'
+
+	-- Lualine
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	}
 end)
+
