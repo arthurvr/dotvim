@@ -47,6 +47,9 @@ lua require('plugins')
 " Shortcut to update plugins
 map <leader>up :PackerUpdate<CR>
 
+" Hide search result
+map <leader>nh :nohlsearch<CR>
+
 " Shortcut to comment stuff
 map <leader>cc :TComment<CR>
 
