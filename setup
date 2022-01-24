@@ -5,6 +5,7 @@ ln -fs "$DOTVIM/config/init.vim" "$HOME/.config/nvim/init.vim"
 mkdir -p "$HOME/.config/nvim/lua/"
 ln -fs "$DOTVIM/config/plugins.lua" "$HOME/.config/nvim/lua/plugins.lua"
 ln -fs "$DOTVIM/config/alpha-nvim.lua" "$HOME/.config/nvim/lua/alpha-nvim.lua"
-mkdir -p "$HOME/.config/nvim/my_snippets/"
-cp -rf "$DOTVIM/my_snippets/" "$HOME/.config/nvim/my_snippets/"
 touch "$HOME/.config/nvim/local.vim"
+
+mkdir -p ~/.local/share/nvim/site/pack/packer/start/
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
