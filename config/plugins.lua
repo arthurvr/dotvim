@@ -37,6 +37,9 @@ return require('packer').startup(function()
 	-- Little help with brackets, quotes, XML tags, parentheses, ...
 	use 'tpope/vim-surround'
 
+	-- Use the dot command with vim-surround
+	use 'tpope/vim-repeat'
+
 	-- Renders markdown within vim
 	use 'ellisonleao/glow.nvim'
 
