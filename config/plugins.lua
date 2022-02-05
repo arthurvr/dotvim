@@ -46,6 +46,9 @@ return require('packer').startup(function()
 	-- Emmet for html editing
 	use 'mattn/emmet-vim'
 
+	-- Rust (including rustfmt)
+	use 'rust-lang/rust.vim'
+
 	-- Lualine
 	use {
 		'nvim-lualine/lualine.nvim',

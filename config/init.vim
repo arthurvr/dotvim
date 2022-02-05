@@ -39,10 +39,14 @@ nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
 
+
 " Todo: use this to install Packer
 " https://github.com/wbthomason/packer.nvim#bootstrapping
 " Load plugins.
 lua require('plugins')
+
+" Auto-format rust code
+let g:rustfmt_autosave = 1
 
 " Shortcut to update plugins
 map <leader>up :PackerUpdate<CR>
@@ -64,7 +68,10 @@ map <leader>te :FloatermNew<CR>
 
 " Function to quickly execute a file in a floating terminal window
 function! ExecFile()
-	if &ft == "markdown"
+	if &ft == "rust"
+		exec ":w"
+		exec ":FloatermNew cargo run"
+	elseif &ft == "markdown"
 		exec ":w"
 		exec ":Glow %"
 	else
