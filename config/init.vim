@@ -66,6 +66,15 @@ map <leader>fg :Leaderf rg --popup<CR>
 " Shortcut to open float-term
 map <leader>te :FloatermNew<CR>
 
+" Function to quickly run tests using a default command.
+function! ExecTests()
+	if &ft == "rust"
+		exec ":w"
+		exec ":FloatermNew cargo test"
+	endif
+endfunction
+map <leader>t :call ExecTests()<CR>
+
 " Function to quickly execute a file in a floating terminal window
 function! ExecFile()
 	if &ft == "rust"
