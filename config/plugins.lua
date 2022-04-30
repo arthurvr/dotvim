@@ -22,6 +22,9 @@ return require('packer').startup(function()
 	-- Icons! Used in alpha-nvim
 	use {'kyazdani42/nvim-web-devicons', event = 'VimEnter'}
 
+	-- MiniZinc
+	use 'vale1410/vim-minizinc'
+
 	-- Alpha!
 	use {
 		'goolord/alpha-nvim',
