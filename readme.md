@@ -5,13 +5,11 @@
 
 ## Setup
 
-Clone this repo (or your fork) and run the `dotvim` script.
+Clone this repo (or your fork) and run the setup script.
 
 ```
 $ ./setup
 ```
-
-## Installing plugins
 
 After opening neovim for the first time, you'll have to install all plugins using `:PackerInstall`.
 
