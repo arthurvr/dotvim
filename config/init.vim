@@ -80,16 +80,26 @@ function! ExecFile()
 	if &ft == "rust"
 		exec ":w"
 		exec ":FloatermNew cargo run"
+	elseif &ft == "haskell"
+		exec ":w"
+		exec ":FloatermNew --autoclose=0 runhaskell %"
+	elseif &ft == "cpp"
+		exec ":w"
+		exec ":FloatermNew --autoclose=0 g++ -std=c++11 -o demo % && ./demo"
+	elseif &ft == "scala"
+		exec ":w"
+		exec ":FloatermNew --autoclose=0 scala %"
 	elseif &ft == "zinc"
 		exec ":w"
 		exec ":FloatermNew --autoclose=0 minizinc %"
 	elseif &ft == "markdown"
 		exec ":w"
 		exec ":Glow %"
+	elseif &ft == "scheme"
+		exec ":w"
+		exec ":FloatermNew --autoclose=0 racket %"
 	else
-		if &ft == "haskell"
-			let cmd = "runhaskell %"
-		elseif &ft == "java"
+		if &ft == "java"
 			let cmd = "javac % && java %:t:r"
 		endif
 
@@ -104,6 +114,9 @@ let g:UltiSnipsSnippetDirectories=['~/.config/nvim/my_snippets/']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Shortcut to open my snippets folder
+nmap <leader>sn :tabedit ~/.config/nvim/my_snippets/<CR>
 
 " Lualine setup
 lua << END
