@@ -85,7 +85,7 @@ function! ExecFile()
 		exec ":FloatermNew --autoclose=0 runhaskell %"
 	elseif &ft == "cpp"
 		exec ":w"
-		exec ":FloatermNew --autoclose=0 g++ -std=c++11 -o demo % && ./demo"
+		exec ":FloatermNew --autoclose=0 g++ -std=c++17 -o demo % && ./demo"
 	elseif &ft == "scala"
 		exec ":w"
 		exec ":FloatermNew --autoclose=0 scala %"
