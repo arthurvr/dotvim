@@ -66,6 +66,9 @@ map <leader>fg :Leaderf rg --popup<CR>
 " Shortcut to open float-term
 map <leader>te :FloatermNew<CR>
 
+" Automatically run rustfmt on .rs files!
+let g:rustfmt_autosave = 1
+
 " Function to quickly run tests using a default command.
 function! ExecTests()
 	if &ft == "rust"
