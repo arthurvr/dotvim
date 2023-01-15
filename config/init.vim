@@ -133,10 +133,3 @@ nmap <leader>rc :tabedit ~/.config/nvim/local.vim<CR>
 if filereadable(glob('~/.config/nvim/local.vim'))
 	source ~/.config/nvim/local.vim
 endif
-
-" Automatically apply C syntax to IDP files.
-" IDP doesn't even resemble C (lol), but it works better than not having any
-" highlighting imho.
-" In the future, someone might like to take over the syntax description from
-" the official IDP IDE.
-autocmd BufNewFile,BufRead *.idp   set syntax=c
