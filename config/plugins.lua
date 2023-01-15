@@ -27,7 +27,7 @@ return require('packer').startup(function()
 
 	-- Alpha!
 	use {
-		'goolord/alpha-nvim',
+		'arthurvr/alpha-nvim',
 		config = [[require('alpha-nvim')]]
 	}
 
